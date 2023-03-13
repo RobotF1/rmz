@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: #562B08;
+    overflow: auto;
+    overflow-x: hidden;
+    
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    background-color:#EEE3CB;
+    
+}
+
+/* .inicio:hover{
+    width: 120px;
+} */
+
+
+.links{
+    margin-bottom: 0;
+}
+
+.link{
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    color: #000;
+    letter-spacing: 3px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: .3s
+}
+
+.link:hover{
+    color:#B3541E;
+    cursor: pointer;
+    scale: 1.2;
+}
+
+.toggle{
+    position: relative;
+    right: 50px;
+    color:#000;
+    cursor:pointer;
+    transition: .3s;
+}
+
+.toggle:hover{
+    color: #B3541E;
+}
+
+
+.linea{
+    background-image: url("linea.jpg");
+    background-repeat: repeat-x;
+}
+
+.card{
+    grid-auto-columns: auto;
+    margin: 0 50px;
+    padding-top: 10px;
+    border-radius: 20px; 
+    border: 5px #B3541E;
+
+}
+
+.rounded{
+    border: 5px groove #fff;
+}
+
+.jumbotron{
+    color: #fff;
+    position: relative;
+    background-color: #B3541E;
+}
+
+.lineafooter{
+    position: relative;
+    top: -40px;
+    background-image: url("linea.jpg");
+    background-repeat: repeat-x;
+}
+
+@media screen and (max-width:625px) {
+    .links{
+        position: absolute;
+        display: flex;
+        
+    }
+}
