@@ -99,6 +99,44 @@ body{
     background-repeat: repeat-x;
 }
 
+@media screen and (max-width:992px) {
+
+    .navbar > div{
+        position: sticky;
+    }
+
+    .incio  > img{
+        position:relative;
+        left: 100px;
+        top: 50px;
+    }
+
+    .links{
+        position: relative;
+        right: 30px;
+        display: inline-block;
+        
+    }
+
+    .proyectos{
+        padding: 0 50px;
+    }
+
+    .logo{
+        position: relative;
+        left: 130px;
+        width: 200px;
+        height: 200px
+    }
+
+    .ford {
+        position: relative;
+        top: 30px;
+        left: -10px;
+    }
+
+}
+
 @media screen and (max-width:625px) {
 
     .navbar > div{
