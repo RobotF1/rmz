@@ -12,34 +12,34 @@ body{
     background-color: #562B08;
     overflow: auto;
     overflow-x: hidden;
-    
+    position: relative;
 }
 
 .navbar{
     position: sticky;
     top: 0;
     background-color:#EEE3CB;
-    
 }
 
-/* .inicio:hover{
-    width: 120px;
-} */
+.inicio{
+    left: 75px;
+}
 
 
 .links{
     margin-bottom: 0;
+    right: 75px;
 }
 
 .link{
     display: inline-block;
     padding: 10px;
-    position: relative;
     color: #000;
     letter-spacing: 3px;
     font-weight: 400;
     cursor: pointer;
     transition: .3s
+    
 }
 
 .link:hover{
@@ -49,7 +49,6 @@ body{
 }
 
 .toggle{
-    position: relative;
     right: 50px;
     color:#000;
     cursor:pointer;
@@ -72,30 +71,67 @@ body{
     padding-top: 10px;
     border-radius: 20px; 
     border: 5px #B3541E;
-
 }
 
 .rounded{
     border: 5px groove #fff;
 }
 
-.jumbotron{
+.logo{
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+}
+
+.ford{
+    left: 50px;
+}
+
+.jumbotron {
     color: #fff;
-    position: relative;
+    max-width: 100%;
     background-color: #B3541E;
+    margin-bottom: 0;
 }
 
 .lineafooter{
-    position: relative;
-    top: -40px;
     background-image: url("linea.jpg");
     background-repeat: repeat-x;
 }
 
 @media screen and (max-width:625px) {
-    .links{
-        position: absolute;
-        display: flex;
-        
+
+    .navbar > div{
+        position: sticky;
     }
+
+    .incio  > img{
+        position:relative;
+        right: 500px;
+        top: 50px;
+    }
+
+    .links{
+        position: relative;
+        right: 100px;
+        display: inline-block;
+    }
+
+    .proyectos{
+        padding: 0 50px;
+    }
+
+    .logo{
+        position: relative;
+        left: 130px;
+        width: 200px;
+        height: 200px
+    }
+
+    .ford {
+        position: relative;
+        top: 30px;
+        left: -20px;
+    }
+
 }
