@@ -165,7 +165,7 @@ body{
 
 }
 
-@media screen and (max-width:625px) {
+@media screen and (max-width:665px) {
 
     .navbar > div{
         position: sticky;
