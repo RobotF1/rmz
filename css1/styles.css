@@ -135,7 +135,7 @@ body{
     background-repeat: repeat-x;
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:1024px) {
     .header .button{
         display: block;
         cursor: pointer;
