@@ -13,6 +13,7 @@ body{
     overflow: auto;
     overflow-x: hidden;
     position: relative;
+    max-width: 100%;
 }
 
 .navbar{
@@ -78,13 +79,14 @@ body{
 }
 
 .logo{
-    height: 300px;
-    width: 300px;
-    border-radius: 50px;
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+    left: 300px;
 }
 
 .ford{
-    left: 50px;
+    left: 10px;
 }
 
 .jumbotron {
@@ -92,6 +94,14 @@ body{
     max-width: 100%;
     background-color: #B3541E;
     margin-bottom: 0;
+}
+
+#enlaces{
+    position: relative;
+    left: 20px;
+    color: #fff;
+    
+    
 }
 
 .lineafooter{
@@ -102,6 +112,8 @@ body{
 @media screen and (max-width:992px) {
 
     .navbar > div{
+        max-width: 100%;
+    
         position: sticky;
     }
 
@@ -124,16 +136,32 @@ body{
 
     .logo{
         position: relative;
-        left: 130px;
-        width: 200px;
-        height: 200px
+        left: 10px;
+        width: 80px;
+        height: 80px
     }
 
     .ford {
         position: relative;
-        top: 30px;
-        left: -10px;
+        
+       
     }
+
+    .container{
+        position: relative;
+        left: 200px;
+
+    }
+
+    #enlaces > i{
+        position: relative;
+        left: 280px;
+        color: #fff;
+        margin: 8px; 
+             
+    }
+
+
 
 }
 
@@ -141,6 +169,7 @@ body{
 
     .navbar > div{
         position: sticky;
+        
     }
 
     .incio  > img{
@@ -151,7 +180,8 @@ body{
 
     .links{
         position: relative;
-        right: 100px;
+        left: 100px;
+        
         display: inline-block;
     }
 
@@ -161,15 +191,23 @@ body{
 
     .logo{
         position: relative;
-        left: 130px;
-        width: 200px;
-        height: 200px
+        left: -130px;
+       
     }
 
     .ford {
         position: relative;
-        top: 30px;
-        left: -20px;
+        top: 0;
+        left: -250px;
+    }
+
+
+    #enlaces{
+        position: relative;
+        left: -70px;
+        color: #fff;
+        
+        
     }
 
 }
