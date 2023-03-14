@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+/* @import 'reset/variables' 'reset/mixins' , 'reset/reset' ,'reset/keyframes'; */
+
+
+
+:root {
+  --negro: #393939;
+  --tipo-principal: Helvetica, Arial, sans-serif;
+  --tipo-secundaria: Verdana;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation: none !important;
+            animation: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* menu */
+body{
+    background-color: #393939;
+}
+.header{
+    width: 100%;
+    background-color: #282828;
+    padding: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 70px;
+    width: 70px;
+    border-radius: 15px;
+}
+
+
+.header .a{
+    text-decoration: none;
+    color: #fff;
+    font-size:1.2em ;
+}
+
+.header .button{
+    display: none;
+}
+
+.header .svg{
+    width: 3em;
+    height: 3em;
+    fill: #fff;
+}
+
+.header .ul {
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header .li {
+    margin: 0 .5em; 
+    list-style-type: none;
+    font-size: 1.3em;
+}
+
+.linea{
+    background-image: url("linea.jpg");
+    background-repeat: repeat-x;
+}
+
+.carrousel{
+    width:90%;
+    max-width: 120em;
+    padding:2em;
+    overflow: hidden;
+}
+.carrousel .grande{
+    width: 200%;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding:2em;
+    transition: all .5s ease;
+    transform: translateX(0%);
+}
+.carrousel .img{
+    width: calc( 100% / 2  - 2em);
+    min-height: 10vh;
+    border-radius: 1em;
+}
+.carrousel .puntos{
+    width:100%;
+    margin:1em 0 0;
+    padding:.4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.carrousel .punto{
+    width:  1em;
+    height: 1em;
+    margin: 1em 1em 0;
+    color: #686767;
+    list-style-type: none;
+    border-radius: 50%;
+   
+}
+.carrousel .punto.activo{
+    background-color: lightblue;
+}
+
+.lineafooter{
+    background-image: url("linea.jpg");
+    background-repeat: repeat-x;
+}
+
+@media screen and (max-width:480px) {
+    .header .button{
+        display: block;
+        cursor: pointer;
+        background-color: #282828;
+    }
+
+    .header .nav{
+        width: 100%;
+        /* display: none; */
+        height: 0;
+        pointer-events: none;
+        overflow: hidden;
+        transition: all .5s ease;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .nav.activo{
+        /* display: block; */
+        height: 50vh; 
+        pointer-events: auto;
+    }
+
+    .header .ul{
+        flex-direction: column;
+    }
+
+    .header .li{
+        margin: 1em 0;
+    }
+}
+
