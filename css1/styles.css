@@ -111,13 +111,12 @@ body{
 
 @media screen and (max-width:992px) {
 
-    .navbar > div{
+    .navbar {
         max-width: 100%;
-    
         position: sticky;
     }
 
-    .incio  > img{
+    .incio  {
         position:relative;
         left: 100px;
         top: 50px;
@@ -153,9 +152,9 @@ body{
 
     }
 
-    #enlaces > i{
+    #enlaces {
         position: relative;
-        left: 280px;
+        left: 300px;
         color: #fff;
         margin: 8px; 
              
@@ -167,12 +166,13 @@ body{
 
 @media screen and (max-width:665px) {
 
-    .navbar > div{
+    .navbar {
+        max-width:100%;
         position: sticky;
         
     }
 
-    .incio  > img{
+    .incio {
         position:relative;
         right: 500px;
         top: 50px;
