@@ -142,11 +142,11 @@ body{
 
 
 .icons{
-    margin: 7%  28%;
-    
+    margin: 7%  3%;    
 }
 
 .icons .icon{
+    height: 100px;
     margin: 1em;
 }
 
@@ -186,6 +186,17 @@ body{
 
     .carrousel{
         justify-content: center;
+    }
+  
+     .icons{
+        margin: 7%  28%;
+        
+    }
+
+    .icons .icon{
+        position: relative;
+        height: 50px;
+        margin: 1em;
     }
 }
 
